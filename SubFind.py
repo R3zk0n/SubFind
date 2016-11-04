@@ -12,11 +12,7 @@ class TColors:
     W = '\033[0m'  #white
 
 
-def CNAME_Check():
-    check = dns.resolver.query(normal2, 'CNAME')
-    print
-
-def save_to_file(filename, ip): ##Gotta fix this, add sorting feature if possible.
+def save_to_file(filename, ip):
     with open(str(filename), 'ab') as f:
             f.write(ip+'\n')
 
